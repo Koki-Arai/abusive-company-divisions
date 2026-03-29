@@ -1,0 +1,21 @@
+# Anonymised judicial case coding sheet
+# Source: TKC Legal Information Database (post-2012 lower-court judgments)
+# Case identifiers anonymised per data provider terms of use
+# Column definitions:
+#   delta      : succession ratio distortion = (asset ratio) - (liability ratio)
+#   rho        : disclosure adequacy score [0,1] per coding rubric
+#   phi_sign   : sign of successor net assets (positive/negative/boundary)
+#   sigma      : 1 if suspicious post-division disposals observed, else 0
+#   remedy_assigned: actual remedy at issue (none/P/A/F)
+#
+case_id,year,court,outcome,delta,rho,phi_sign,sigma,remedy_assigned,notes
+CASE-001,2013,Tokyo District,upheld,0.62,0.15,negative,1,A,Post-division share transfer to related party at below-market price
+CASE-002,2014,Osaka District,dismissed,0.08,0.82,positive,0,none,Full disclosure; successor remained solvent
+CASE-003,2015,Tokyo District,upheld,0.45,0.28,negative,1,F,Multiple subsequent disposals; compound relief sought
+CASE-004,2016,Nagoya District,partial,0.31,0.55,boundary,0,P,Grey zone G2: phi near zero; value-compensation awarded
+CASE-005,2017,Tokyo District,dismissed,0.04,0.91,positive,0,none,Legitimate reorganisation; full plan disclosure
+CASE-006,2018,Osaka District,upheld,0.58,0.12,negative,1,F,Organised asset flight; third-party transferees involved
+CASE-007,2019,Tokyo District,upheld,0.22,0.41,negative,0,A,Grey zone G3: division date close to insolvency date
+CASE-008,2020,Osaka District,partial,0.37,0.62,positive,1,P,Grey zone G4: business continues; mixed type
+CASE-009,2021,Tokyo District,dismissed,0.11,0.77,positive,0,none,Adequate disclosure; no post-division disposals
+CASE-010,2022,Osaka District,upheld,0.71,0.09,negative,1,F,Severe distortion; successor insolvent; rapid disposal
